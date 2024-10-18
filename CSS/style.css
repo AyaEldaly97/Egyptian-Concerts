@@ -1,0 +1,143 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.head{
+    background-image: linear-gradient(rgba(8, 76, 118, 0.645), rgba(8, 76, 118, 0.645)),
+    url(../images/360_F_328894297_UEWkHrtVSHrqVXz87nuwRQXxovU1AOsU.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+/* * Side bar */
+.open{
+    width: 240px;
+    z-index: 10;
+    left: -240px;
+    top: 0;
+    background-color: #167ab4;
+    color: #FFF;
+    transition: all 300ms;
+}
+
+.open i{
+    font-size: 30px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.open ul li a{
+        display: block;
+        padding-block: 15px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+        color: white;
+
+}
+
+.open ul li:first-of-type{
+    padding-top: 30px;
+}
+
+.openIcon{
+    border: 3px solid #167ab4;
+    border-radius: 5px;
+    padding: 10px;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+
+    & span , i{
+        transition: color 200ms;
+    }
+}
+
+.openIcon:hover i,  .openIcon:hover span{
+    color: #acdefc;
+}
+
+
+/* * Singers section */
+
+.singers-section{
+    padding-block: 100px;
+}
+
+.singers{
+    width: 75% !important;
+}
+
+.singers h3{
+    background-color: #0d527a;
+    cursor: pointer;
+    margin: 0;
+    padding-block: 10px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.singers p{
+    text-align: justify;
+    text-transform: capitalize;
+    line-height: 1.7;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .singers{
+        width: 100% !important;
+    }
+    .singers h3, .singers p{
+        width: 100% !important;
+    }
+}
+
+
+/* * Countdown section */
+
+#countdown{
+    background-image: linear-gradient(rgba(8, 76, 118, 0.645), rgba(8, 76, 118, 0.645)),
+      url(../images/360_F_328894297_UEWkHrtVSHrqVXz87nuwRQXxovU1AOsU.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.time{
+    padding: 60px;
+    border: 2px solid #FFF;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.countdown{
+    padding-block: 100px;
+}
+
+
+
+/* * Contact section */
+
+.contact form button{
+    background-color: #0d527a;
+    transition: background-color 300ms, outline 300ms;
+}
+
+.contact form button:hover{
+    background-color: #167ab4;
+      outline: 5px solid var(--light-blue-color);
+}
+
+.social-link {
+      width: 40px;
+      height: 40px;
+      border: 2px solid black;
+}
